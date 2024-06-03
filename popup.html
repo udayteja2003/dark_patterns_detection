@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Patterns Checker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 380px;
+            background-color: #ffffff;
+            border: 3px solid rgb(0, 16, 14);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden; /* Ensure child elements don't go beyond the container */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 110px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .dark-patterns-text {
+            font-size: 1.65em;
+            margin-bottom: 20px;
+            font-family: 'Oswald', sans-serif;
+            color: #035b98;
+            border: 2px solid #6BC1ff;
+            padding: 8px 50px;
+            border-radius: 8px;
+            background-color: #e9f6ff;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: rgb(12, 141, 49);
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        button {
+            background-color: #035b98;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.4em;
+            border-radius: 5px;
+            font-family: 'teko', sans-serif;
+        }
+
+        button:hover {
+            background-color:  #6BC1ff;
+        }
+
+        button:active {
+            background-color: #6bc1ff;
+        }
+
+        #knowMoreButton {
+            color: #0366d6;
+            text-decoration: none;
+            font-size: 1.4em;
+            border-radius: 5px;
+            font-family: 'Garamond', serif;
+            margin-top: 20px;
+        }
+
+        #knowMoreButton:hover {
+            text-decoration: none;
+        }
+        #result-container {
+            margin-top: 20px;
+        }
+
+        h2 {
+    font-size: 1.9em;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal; /* Add this line to set font weight to normal */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: black; /* Set the color for the result text */
+    font-family: 'Times New Roman', serif;
+    font-weight: bold; /* Set the font weight to bold */
+}
+
+
+        li {
+            margin-bottom: 5px;
+            color:red;
+            font-size: 1.4em;
+            font-family: 'Garamond', serif;
+        }
+
+    </style>
+
+    <script src="js/popup.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="logo" src="static\tk logo.png" alt="Logo">
+        </div>
+        <div class="dark-patterns-text"><b>Dark Patterns Checker🚨</b></div>
+        <button id="checkButton"><b>Check Patterns </b></button>
+        <div id="result-container">
+            <h2>Detected Patterns are:</h2>
+                <ul id="result"></ul>
+                <br>
+                <p> <span style="font-size: 1.2em;">For Further Details, </span><a href="https://www.deceptive.design/" id="knowMoreButton"><span style="font-size: 1.2em;">continue</span></a><span style="font-size: 1.2em;"> here.</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

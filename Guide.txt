@@ -1,0 +1,5 @@
+1. Run the app.py File in cmd
+2. Load the Extension in Chrome/Edge/Opera
+3. Now you can use the extension
+
+Note: You need run the app.py file before using it(everytime)
