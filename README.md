@@ -19,7 +19,7 @@ The **Dark Patterns Detector** is a browser extension designed to identify and f
 
 Here are a couple of examples of the extension in action:
 
-![Detected Patterns Example 1](dark_patterns_detection/static/Screenshot 2024-02-09 215402.png)
+![Detected Patterns Example 1](Screenshot 2024-02-09 215429.png)
 
 ![Detected Patterns Example 2]<img src="Screenshot2024-02-09_215429.png"></img>
 
