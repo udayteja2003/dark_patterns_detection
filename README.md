@@ -21,7 +21,7 @@ Here are a couple of examples of the extension in action:
 
 ![Detected Patterns Example 1](dark_patterns_detection/static/Screenshot 2024-02-09 215402.png)
 
-![Detected Patterns Example 2](Screenshot2024-02-09_215429.png)
+![Detected Patterns Example 2]<img src="Screenshot2024-02-09_215429.png"></img>
 
 ## 🛠️ Tech Stack
 
