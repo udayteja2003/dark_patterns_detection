@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Flask-2.0+-black?style=for-the-badge&logo=flask)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-yellowgreen?style=for-the-badge&logo=selenium)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-WebScraping-blue?style=for-the-badge&logo=python)
 
 ## 🚀 Overview
 
@@ -12,7 +12,7 @@ The **Dark Patterns Detector** is a browser extension designed to identify and f
 ## ✨ Key Features
 
 - **Detection Algorithms**: Identifies common dark patterns like deceptive design, misdirection, and forced continuity.
-- **Web Scraping**: Utilizes **Selenium** and web scraping libraries to analyze web pages in real-time.
+- **Web Scraping**: Utilizes **Beautiful Soup** to parse and analyze web pages in real-time.
 - **Flask Backend**: Manages data processing and integration with the browser extension.
 
 ## 🖼️ Screenshots
@@ -27,7 +27,7 @@ Here are a couple of examples of the extension in action:
 
 - **Python 3.8+**
 - **Flask 2.0+**
-- **Selenium WebDriver**
+- **Beautiful Soup**
 
 ## 🌟 Highlights
 
